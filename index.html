@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnia - Pet Battle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Omnia</h1>
+        <div class="battle-area">
+            <div class="pet" id="player-pet">
+                <h2>Player's Pet: <span id="player-name"></span></h2>
+                <p>HP: <span id="player-hp"></span></p>
+            </div>
+            <div class="pet" id="enemy-pet">
+                <h2>Enemy's Pet: <span id="enemy-name"></span></h2>
+                <p>HP: <span id="enemy-hp"></span></p>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="attack()">Attack</button>
+            <button onclick="heal()">Heal</button>
+        </div>
+        <div class="log" id="battle-log"></div>
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
